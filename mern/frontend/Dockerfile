@@ -2,7 +2,7 @@
 # Description: Dockerfile for the client side of the MERN stack application
 
 # Use the official image as a parent image
-FROM node:slim
+FROM node:current-alpine3.20
 
 # Set the working directory
 WORKDIR /app
