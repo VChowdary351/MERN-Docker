@@ -1,3 +1,6 @@
+networks:
+  mern:
+    driver: bridge
 services:
   backend:
     build: mern/backend
@@ -26,11 +29,7 @@ services:
     networks:
       - mern
     volumes:
-      - mongo-data:/data/db  
-
-networks:
-  mern:
-    driver: bridge 
+      - mongo-data:/data/db   
 
 volumes:
   mongo-data:
